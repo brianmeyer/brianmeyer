@@ -1,52 +1,56 @@
-# Brian Meyer
+<p align="center">
+  <img src="./assets/hero.svg" alt="Autonomous AI System Architecture" width="100%" />
+</p>
 
-### Building production AI systems that remember, reason, and act.
+<h1 align="center">Brian Meyer</h1>
 
-**Deployment Strategist @ Databricks**
+<p align="center">
+  <strong>Building production AI systems that remember, reason, and act.</strong><br/>
+  Deployment Strategist @ Databricks
+</p>
 
-I build production-oriented AI systems focused on autonomous agents, persistent memory, local model experimentation, developer tooling, and embodied AI.
-
-> **Useful > Novel**  
-> **Working > Clever**  
-> **Shipping > Talking**
+<p align="center">
+  <strong>Useful &gt; Novel</strong> &nbsp;·&nbsp;
+  <strong>Working &gt; Clever</strong> &nbsp;·&nbsp;
+  <strong>Shipping &gt; Talking</strong>
+</p>
 
 ---
 
 ## Mission
 
-I’m interested in the systems around modern AI: how models gain memory, use tools, run locally, interact with people, and move from prototypes into dependable real-world deployments.
+I build and explore the systems around modern AI: how models gain memory, use tools, run locally, interact with people, and move from prototypes into dependable real-world deployments.
 
 My work sits at the intersection of AI product strategy, systems design, experimentation, and deployment.
 
----
-
 ## Capability Map
 
-### Agent Systems
-
-[**Molly**](https://github.com/brianmeyer/molly)
-
-A personal AI assistant and experimentation platform for agent workflows, tool use, orchestration, and practical automation.
-
-### Memory & Knowledge
-
-[**RecallForge**](https://github.com/brianmeyer/recallforge) / [**MollyGraph**](https://github.com/brianmeyer/mollygraph)
-
-Experiments in persistent memory, retrieval, semantic relationships, knowledge graphs, and long-term context for AI systems.
-
-### Local AI
-
-[**TinyLLM**](https://github.com/brianmeyer/tinyllm) / [**DistillReasoning**](https://github.com/brianmeyer/distillreasoning)
-
-Local model experimentation across inference, reasoning workflows, serving, distillation, and deployable LLM systems.
-
-### Embodied AI
-
-[**Reachy Mini Conversation App**](https://github.com/brianmeyer/reachy_mini_conversation_app)
-
-Voice-first robotics, multimodal interaction, and experiments in bringing AI systems into the physical world.
-
----
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Agent Systems</h3>
+      <p><a href="https://github.com/brianmeyer/molly"><strong>Molly</strong></a></p>
+      <p>A personal AI assistant and experimentation platform for agent workflows, tool use, orchestration, and practical automation.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Memory &amp; Knowledge</h3>
+      <p><a href="https://github.com/brianmeyer/recallforge"><strong>RecallForge</strong></a> / <a href="https://github.com/brianmeyer/mollygraph"><strong>MollyGraph</strong></a></p>
+      <p>Persistent memory, retrieval, semantic relationships, knowledge graphs, and long-term context for AI systems.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Local AI</h3>
+      <p><a href="https://github.com/brianmeyer/tinyllm"><strong>TinyLLM</strong></a> / <a href="https://github.com/brianmeyer/distillreasoning"><strong>DistillReasoning</strong></a></p>
+      <p>Local model experimentation across inference, reasoning workflows, serving, distillation, and deployable LLM systems.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Embodied AI</h3>
+      <p><a href="https://github.com/brianmeyer/reachy_mini_conversation_app"><strong>Reachy Mini Conversation App</strong></a></p>
+      <p>Voice-first robotics, multimodal interaction, and experiments in bringing AI systems into the physical world.</p>
+    </td>
+  </tr>
+</table>
 
 ## Current Focus
 
@@ -57,19 +61,22 @@ Voice-first robotics, multimodal interaction, and experiments in bringing AI sys
 - Production deployment patterns
 - Human-AI collaboration
 
----
-
 ## Design Principles
 
-- Build for production.
-- Prefer useful systems over impressive demos.
-- Use local-first architectures when practical.
-- Keep humans in the loop where judgment matters.
-- Prefer simple, maintainable systems.
-- Measure before optimizing.
-- Ship.
-
----
+<table>
+  <tr>
+    <td>Build for production.</td>
+    <td>Prefer useful systems over impressive demos.</td>
+  </tr>
+  <tr>
+    <td>Use local-first architectures when practical.</td>
+    <td>Keep humans in the loop where judgment matters.</td>
+  </tr>
+  <tr>
+    <td>Prefer simple, maintainable systems.</td>
+    <td>Measure before optimizing.</td>
+  </tr>
+</table>
 
 ## About
 
@@ -80,8 +87,6 @@ Voice-first robotics, multimodal interaction, and experiments in bringing AI sys
 
 ---
 
-<div align="center">
-
-### Useful > Novel · Working > Clever · Shipping > Talking
-
-</div>
+<p align="center">
+  <strong>Useful &gt; Novel · Working &gt; Clever · Shipping &gt; Talking</strong>
+</p>
