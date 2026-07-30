@@ -1,105 +1,94 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500" role="img" aria-labelledby="title desc">
-  <title id="title">Autonomous AI System Architecture</title>
-  <desc id="desc">A blueprint-style architecture showing perception, reasoning, memory, planning, tool use, action, and deployment.</desc>
-  <defs>
-    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#17314f" stroke-width="1" opacity="0.35"/>
-    </pattern>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#06101c"/>
-      <stop offset="1" stop-color="#0a1726"/>
-    </linearGradient>
-    <filter id="glow"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <style>
-      .label{font:600 22px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:1px;fill:#dbeafe}
-      .small{font:500 14px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:1px;fill:#7dd3fc}
-      .tiny{font:500 12px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.8px;fill:#93a4b8}
-      .title{font:700 38px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:3px;fill:#f8fafc}
-      .node{fill:#091522;stroke-width:2;rx:16}
-      .line{stroke:#7dd3fc;stroke-width:2;fill:none;opacity:.8}
-      .dash{stroke-dasharray:7 7;opacity:.55}
-    </style>
-  </defs>
-  <rect width="1500" height="500" fill="url(#bg)"/>
-  <rect width="1500" height="500" fill="url(#grid)"/>
-  <rect x="18" y="18" width="1464" height="464" rx="18" fill="none" stroke="#29435f"/>
+<title id="title">Autonomous AI System Architecture</title>
+<desc id="desc">Blueprint-style architecture banner showing perception, reasoning, memory, planning, tool use, action, and deployment.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#030b14"/><stop offset="1" stop-color="#071727"/></linearGradient>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#17314a" stroke-width="1" opacity=".3"/></pattern>
+  <filter id="soft"><feGaussianBlur stdDeviation="3"/></filter>
+  <style>
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+    .title{font-size:34px;font-weight:700;letter-spacing:5px;fill:#f2f7ff}
+    .sub{font-size:13px;letter-spacing:3px;fill:#72b7ff}
+    .kicker{font-size:11px;letter-spacing:2px;fill:#8ea2b8}
+    .stage{font-size:17px;font-weight:700;letter-spacing:1px;fill:#edf5ff}
+    .micro{font-size:10px;letter-spacing:1px;fill:#8fa4b8}
+    .impl{font-size:12px;font-weight:700;letter-spacing:1px}
+    .box{fill:#071523;stroke-width:1.5}
+    .wire{fill:none;stroke:#9bb4c9;stroke-width:1.4;opacity:.8}
+  </style>
+</defs>
+<rect width="1500" height="500" fill="url(#bg)"/>
+<rect width="1500" height="500" fill="url(#grid)"/>
+<rect x="18" y="18" width="1464" height="464" rx="10" fill="none" stroke="#38516a"/>
+<g stroke="#5e7891" opacity=".8"><path d="M18 48h32M18 18v32M1450 18h32M1482 18v32M18 450h32M18 482v-32M1450 482h32M1482 482v-32"/></g>
 
-  <text x="60" y="78" class="title">AUTONOMOUS AI SYSTEM ARCHITECTURE</text>
-  <text x="62" y="112" class="small">DESIGNED TO REMEMBER • REASON • ACT • DEPLOY</text>
+<text x="62" y="72" class="mono kicker">SYSTEM ARCHITECTURE · REV 1.0</text>
+<text x="62" y="118" class="mono title">AUTONOMOUS AI SYSTEM</text>
+<text x="64" y="149" class="mono sub">DESIGNED TO REMEMBER · REASON · ACT · DEPLOY</text>
 
-  <g transform="translate(70 178)">
-    <g>
-      <rect class="node" x="0" y="0" width="155" height="150" stroke="#60a5fa"/>
-      <circle cx="77" cy="48" r="18" fill="none" stroke="#60a5fa" stroke-width="2"/>
-      <circle cx="77" cy="48" r="5" fill="#60a5fa"/>
-      <text x="77" y="98" text-anchor="middle" class="label">PERCEPTION</text>
-      <text x="77" y="123" text-anchor="middle" class="tiny">vision · audio · text</text>
-    </g>
-    <g>
-      <rect class="node" x="190" y="0" width="155" height="150" stroke="#c084fc"/>
-      <path d="M240 55c0-18 14-31 31-31 16 0 28 9 31 24 12 1 21 10 21 23 0 14-11 25-25 25h-31c-15 0-27-12-27-27 0-6 2-10 5-14z" fill="none" stroke="#c084fc" stroke-width="2"/>
-      <text x="267" y="98" text-anchor="middle" class="label">REASONING</text>
-      <text x="267" y="123" text-anchor="middle" class="tiny">local models · inference</text>
-    </g>
-    <g>
-      <rect class="node" x="380" y="0" width="155" height="150" stroke="#86efac"/>
-      <ellipse cx="430" cy="45" rx="22" ry="10" fill="none" stroke="#86efac" stroke-width="2"/>
-      <path d="M408 45v36c0 6 10 10 22 10s22-4 22-10V45" fill="none" stroke="#86efac" stroke-width="2"/>
-      <circle cx="482" cy="54" r="8" fill="none" stroke="#86efac" stroke-width="2"/>
-      <circle cx="505" cy="78" r="8" fill="none" stroke="#86efac" stroke-width="2"/>
-      <path d="M452 67h22l8-13m8 8 9 10" fill="none" stroke="#86efac" stroke-width="2"/>
-      <text x="457" y="98" text-anchor="middle" class="label">MEMORY</text>
-      <text x="457" y="123" text-anchor="middle" class="tiny">retrieval · knowledge</text>
-    </g>
-    <g>
-      <rect class="node" x="570" y="0" width="155" height="150" stroke="#60a5fa"/>
-      <rect x="626" y="34" width="42" height="24" rx="5" fill="none" stroke="#60a5fa" stroke-width="2"/>
-      <circle cx="607" cy="84" r="8" fill="none" stroke="#60a5fa" stroke-width="2"/>
-      <circle cx="648" cy="84" r="8" fill="none" stroke="#60a5fa" stroke-width="2"/>
-      <circle cx="689" cy="84" r="8" fill="none" stroke="#60a5fa" stroke-width="2"/>
-      <path d="M647 58v16m-40 2h82" stroke="#60a5fa" stroke-width="2"/>
-      <text x="647" y="118" text-anchor="middle" class="label">PLANNING</text>
-    </g>
-    <g>
-      <rect class="node" x="760" y="0" width="155" height="150" stroke="#facc15"/>
-      <path d="M808 42l18 18-34 34-18-18zm32 20 22-22m-3 3 12 12" fill="none" stroke="#facc15" stroke-width="3"/>
-      <text x="837" y="98" text-anchor="middle" class="label">TOOL USE</text>
-      <text x="837" y="123" text-anchor="middle" class="tiny">APIs · services · workflows</text>
-    </g>
-    <g>
-      <rect class="node" x="950" y="0" width="155" height="150" stroke="#f59e0b"/>
-      <path d="M1000 85l28-28 20 20-28 28h-20zm28-28V35h25v22" fill="none" stroke="#f59e0b" stroke-width="3"/>
-      <text x="1027" y="118" text-anchor="middle" class="label">ACTION</text>
-    </g>
-    <g>
-      <rect class="node" x="1140" y="0" width="155" height="150" stroke="#f97316"/>
-      <path d="M1183 60c4-17 18-28 36-28 16 0 30 9 35 24 15 1 26 12 26 27 0 16-12 28-29 28h-51c-18 0-32-13-32-30 0-10 5-18 15-21z" fill="none" stroke="#f97316" stroke-width="2"/>
-      <path d="M1198 76h54m-54 14h54" stroke="#f97316" stroke-width="2"/>
-      <text x="1217" y="118" text-anchor="middle" class="label">DEPLOYMENT</text>
-    </g>
-
-    <g class="line" filter="url(#glow)">
-      <path d="M155 75h35"/><path d="M345 75h35"/><path d="M535 75h35"/><path d="M725 75h35"/><path d="M915 75h35"/><path d="M1105 75h35"/>
-      <path d="M184 69l6 6-6 6M374 69l6 6-6 6M564 69l6 6-6 6M754 69l6 6-6 6M944 69l6 6-6 6M1134 69l6 6-6 6"/>
-    </g>
-    <path class="line dash" d="M1217 150v45H77v-45"/>
+<g transform="translate(285 205)">
+  <path d="M0 67H950" stroke="#6d8295" opacity=".35"/>
+  <g transform="translate(0)">
+    <rect width="125" height="135" rx="12" class="box" stroke="#63a8ff"/>
+    <circle cx="62" cy="43" r="21" fill="none" stroke="#63a8ff" stroke-width="2"/>
+    <circle cx="62" cy="43" r="6" fill="#63a8ff"/><path d="M30 43h12m40 0h12M62 11v12m0 40v12" stroke="#63a8ff"/>
+    <text x="62" y="91" text-anchor="middle" class="mono stage">PERCEPTION</text><text x="62" y="113" text-anchor="middle" class="mono micro">VISION · AUDIO · TEXT</text>
   </g>
-
-  <g transform="translate(70 390)">
-    <text x="0" y="0" class="small">IMPLEMENTATIONS</text>
-    <text x="0" y="32" class="tiny">Molly</text>
-    <text x="170" y="32" class="tiny">TinyLLM / DistillReasoning</text>
-    <text x="445" y="32" class="tiny">RecallForge / MollyGraph</text>
-    <text x="760" y="32" class="tiny">Reachy Mini</text>
-    <text x="980" y="32" class="tiny">Databricks</text>
+  <g transform="translate(158)">
+    <rect width="125" height="135" rx="12" class="box" stroke="#bc7cff"/>
+    <path d="M42 59c-15-1-21-16-13-27 5-7 13-9 20-6 5-13 25-15 33-3 12-1 21 9 19 21 10 9 4 26-9 28H45c-11-1-17-7-17-14" fill="none" stroke="#bc7cff" stroke-width="2"/>
+    <text x="62" y="91" text-anchor="middle" class="mono stage">REASONING</text><text x="62" y="113" text-anchor="middle" class="mono micro">LOCAL MODELS</text>
   </g>
-
-  <g transform="translate(1230 54)">
-    <rect width="220" height="96" fill="#07111d" stroke="#29435f"/>
-    <text x="14" y="24" class="tiny">DOCUMENT  AAS-ARCH-001</text>
-    <text x="14" y="49" class="tiny">REVISION  1.0</text>
-    <text x="14" y="74" class="tiny">STATUS    ACTIVE</text>
+  <g transform="translate(316)">
+    <rect width="125" height="135" rx="12" class="box" stroke="#72d680"/>
+    <ellipse cx="48" cy="37" rx="22" ry="9" fill="none" stroke="#72d680" stroke-width="2"/><path d="M26 37v34c0 5 10 9 22 9s22-4 22-9V37" fill="none" stroke="#72d680" stroke-width="2"/><circle cx="89" cy="40" r="6" fill="none" stroke="#72d680"/><circle cx="98" cy="65" r="6" fill="none" stroke="#72d680"/><path d="M70 52l19-12m4 6 5 13" stroke="#72d680"/>
+    <text x="62" y="91" text-anchor="middle" class="mono stage">MEMORY</text><text x="62" y="113" text-anchor="middle" class="mono micro">RETRIEVAL · GRAPH</text>
   </g>
+  <g transform="translate(474)">
+    <rect width="125" height="135" rx="12" class="box" stroke="#63a8ff"/>
+    <rect x="43" y="24" width="38" height="20" rx="3" fill="none" stroke="#63a8ff"/><circle cx="30" cy="70" r="6" fill="none" stroke="#63a8ff"/><circle cx="62" cy="70" r="6" fill="none" stroke="#63a8ff"/><circle cx="94" cy="70" r="6" fill="none" stroke="#63a8ff"/><path d="M62 44v17M30 61h64" stroke="#63a8ff"/>
+    <text x="62" y="101" text-anchor="middle" class="mono stage">PLANNING</text>
+  </g>
+  <g transform="translate(632)">
+    <rect width="125" height="135" rx="12" class="box" stroke="#f2c14e"/>
+    <path d="M37 29l21 21-24 24-21-21zm46 2 24 24m-7-31 14 14M64 59l22 22" fill="none" stroke="#f2c14e" stroke-width="2.5"/>
+    <text x="62" y="101" text-anchor="middle" class="mono stage">TOOL USE</text>
+  </g>
+  <g transform="translate(790)">
+    <rect width="125" height="135" rx="12" class="box" stroke="#f59e0b"/>
+    <path d="M32 76h22l30-30 17 17-30 30H32zm52-30V25h22v22" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+    <text x="62" y="111" text-anchor="middle" class="mono stage">ACTION</text>
+  </g>
+  <g transform="translate(948)">
+    <rect width="125" height="135" rx="12" class="box" stroke="#f97316"/>
+    <path d="M29 63c3-15 15-24 30-24 13 0 24 7 29 20 13 0 23 10 23 23 0 14-11 24-25 24H45c-15 0-27-11-27-26 0-8 4-14 11-17z" fill="none" stroke="#f97316" stroke-width="2"/><path d="M40 74h45m-45 12h45" stroke="#f97316"/>
+    <text x="62" y="122" text-anchor="middle" class="mono stage">DEPLOYMENT</text>
+  </g>
+  <g class="wire"><path d="M125 67h33M283 67h33M441 67h33M599 67h33M757 67h33M915 67h33"/><path d="M151 61l7 6-7 6M309 61l7 6-7 6M467 61l7 6-7 6M625 61l7 6-7 6M783 61l7 6-7 6M941 61l7 6-7 6"/></g>
+  <path d="M1010 135v35H62v-35" fill="none" stroke="#6d8295" stroke-dasharray="6 7" opacity=".55"/>
+</g>
 
-  <text x="1270" y="454" class="tiny">BRIAN MEYER · DEPLOYMENT STRATEGIST</text>
+<g transform="translate(63 214)">
+  <text class="mono kicker">INPUTS</text>
+  <g class="mono micro"><text y="38">◉ VISION</text><text y="67">⌁ AUDIO</text><text y="96">▤ TEXT</text><text y="125">⌁ SENSORS</text></g>
+  <path d="M112 78h84" stroke="#698399" stroke-dasharray="4 5"/><path d="M190 72l7 6-7 6" fill="none" stroke="#698399"/>
+</g>
+
+<g transform="translate(1210 55)">
+  <rect width="230" height="108" fill="#06111d" stroke="#4b647c"/>
+  <path d="M0 35h230M0 70h230M115 35v73" stroke="#344c63"/>
+  <text x="14" y="23" class="mono micro">DOCUMENT</text><text x="128" y="23" class="mono micro">AAS-ARCH-001</text>
+  <text x="14" y="58" class="mono micro">REVISION</text><text x="128" y="58" class="mono micro">1.0</text>
+  <text x="14" y="94" class="mono micro">STATUS</text><text x="128" y="94" class="mono micro" fill="#72d680">ACTIVE</text>
+</g>
+
+<g transform="translate(62 421)">
+  <text class="mono kicker">IMPLEMENTED BY</text>
+  <g transform="translate(160 -8)"><circle r="12" fill="none" stroke="#63a8ff"/><text x="21" y="4" class="mono impl" fill="#63a8ff">MOLLY</text></g>
+  <g transform="translate(340 -8)"><rect x="-12" y="-12" width="24" height="24" fill="none" stroke="#bc7cff"/><text x="21" y="4" class="mono impl" fill="#bc7cff">TINYLLM / DISTILLREASONING</text></g>
+  <g transform="translate(695 -8)"><circle r="12" fill="none" stroke="#72d680"/><text x="21" y="4" class="mono impl" fill="#72d680">RECALLFORGE / MOLLYGRAPH</text></g>
+  <g transform="translate(1035 -8)"><circle r="12" fill="none" stroke="#f2c14e"/><text x="21" y="4" class="mono impl" fill="#f2c14e">REACHY MINI</text></g>
+  <g transform="translate(1245 -8)"><path d="M-12-8L0-15 12-8 0-1zM-12 2L0-5 12 2 0 9z" fill="none" stroke="#f97316"/><text x="22" y="4" class="mono impl" fill="#f97316">DATABRICKS</text></g>
+</g>
+<text x="1225" y="466" class="mono micro">BRIAN MEYER · DEPLOYMENT STRATEGIST</text>
 </svg>
